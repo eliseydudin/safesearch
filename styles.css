@@ -1,0 +1,19 @@
+html {
+  width: 200px;
+  height: 300px;
+  /*border-radius: 15px; right now chrome doesnt support dis :( */
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+#score {
+  font-size: 24px;
+  text-align: center;
+}
+
+#reasons {
+  left: -20%;
+}
