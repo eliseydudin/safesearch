@@ -1,7 +1,7 @@
 function getColorByScore(score) {
-  if (score == 100) {
+  if (score <= 100 && score > 60) {
     return "greenyellow";
-  } else if (score < 100 && score >= 50) {
+  } else if (score <= 60 && score >= 50) {
     return "yellow";
   } else if (score < 50 && score != 0) {
     return "brown";
