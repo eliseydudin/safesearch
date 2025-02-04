@@ -2,15 +2,15 @@
  * @param {Array} score
  */
 function usesHTTP(score) {
-  if (location.protocol == "HTTP") {
-    score.push({
-      reducedScore: 40,
-      text: "This website uses unprotected HTTP",
-    });
-  } else {
+  if (location.protocol == "https:") {
     score.push({
       reducedScore: 0,
       text: "This website is protected",
+    });
+  } else {
+    score.push({
+      reducedScore: 40,
+      text: "This website uses unprotected HTTP",
     });
   }
 }

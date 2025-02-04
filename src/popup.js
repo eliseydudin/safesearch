@@ -26,6 +26,10 @@ function addNextReason(title, reducedScore) {
 }
 
 function updateScore() {
+  if (score < 0) {
+    score = 0;
+  }
+
   const actualScore = document.getElementById("actual-score");
   actualScore.textContent = score.toString();
   actualScore.style = fmtColorStyle(score);
