@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Test Extension",
-  "version": "0.0",
+  "name": "safesearch λ",
+  "version": "0.1",
   "offline_enabled": true,
 
   "content_scripts": [
@@ -14,7 +14,7 @@
   ],
 
   "action": {
-    "default_title": "Test Extension",
+    "default_title": "safesearch λ",
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
