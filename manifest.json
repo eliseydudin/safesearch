@@ -4,20 +4,22 @@
   "version": "0.0",
   "offline_enabled": true,
 
-  "content_scripts": [{
-    "matches": ["*://*.stackoverflow.com/*"],
-    "js": ["src/content.js"],
-    "run_at": "document_idle",
-    "all_frames": false
-  }],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
 
   "action": {
     "default_title": "Test Extension",
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
-  
-  "background" : {
+
+  "background": {
     "service_worker": "src/background.js"
   }
 }

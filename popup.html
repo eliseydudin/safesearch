@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script type="text/javascript" src="src/popup.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>safesearch λ</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h3 style="font-weight: bold; text-align: center">DOM Info</h3>
-    <table border="1" cellpadding="3" style="border-collapse: collapse">
-      <tr>
-        <td nowrap>Total number of elements:</td>
-        <td align="right"><span id="total">N/A</span></td>
-      </tr>
-      <tr>
-        <td nowrap>Number of input elements:</td>
-        <td align="right"><span id="inputs">N/A</span></td>
-      </tr>
-      <tr>
-        <td nowrap>Number of button elements:</td>
-        <td align="right"><span id="buttons">N/A</span></td>
-      </tr>
-    </table>
+    <h1 class="title">safesearch λ</h1>
+    <h3 class="title">this website's score is...</h3>
+    <p id="score">
+      <b><span style="color: greenyellow" id="actual-score">100</span>/100</b>
+    </p>
+    <ul id="reasons"></ul>
   </body>
+  <script src="src/popup.js"></script>
 </html>
